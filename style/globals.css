@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "moraba-regular";
+  src: url("../public/fonts/Morabba-Regular.woff");
+}
+.moraba-regular {
+  font-family: "moraba-regular";
+  -moz-font-feature-settings: "ss01";
+  -webkit-font-feature-settings: "ss01";
+  font-feature-settings: "ss01";
+}
+@font-face {
+  font-family: "moraba-bold";
+  src: url("../public/fonts/Morabba-Bold.woff");
+}
+.moraba-bold {
+  font-family: "moraba-bold";
+  -moz-font-feature-settings: "ss01";
+  -webkit-font-feature-settings: "ss01";
+  font-feature-settings: "ss01";
+}
+@font-face {
+  font-family: "moraba-heavy";
+  src: url("../public/fonts/Morabba-Heavy.woff");
+}
+.moraba-heavy {
+  font-family: "moraba-heavy";
+  -moz-font-feature-settings: "ss01";
+  -webkit-font-feature-settings: "ss01";
+  font-feature-settings: "ss01";
+}
+@font-face {
+  font-family: "shabnam";
+  src: url("../public/fonts/Shabnam.ttf");
+  -moz-font-feature-settings: "ss01";
+  -webkit-font-feature-settings: "ss01";
+  font-feature-settings: "ss01";
+}
+.shabnam {
+  font-family: shabnam;
+}
+.truncate-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap;
+}
+.container-bg {
+  background-color: #f3f3f3;
+}
+#animate-fade {
+  animation: fadeInDownBig 0.4s ease;
+}
+@keyframes fadeInDownBig {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+.Toastify__toast--error {
+  border: 1px solid rgb(52, 24, 14);
+  border-radius: 5px !important;
+  background: #755f56 !important;
+  font-family: "moraba-bold" !important;
+}
+.Toastify__toast {
+  border: 1px solid rgb(52, 24, 14);
+  border-radius: 5px !important;
+  background: #755f56 !important;
+  font-family: "moraba-bold" !important;
+  color: white !important;
+}
+.swal-title {
+  font-size: 1.6rem !important;
+  font-family: "moraba-bold" !important;
+}
+.swal-footer {
+  font-family: "moraba-bold" !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swal-button--confirm {
+  transition: all 0.2s;
+  background-color: rgb(0, 104, 67) !important;
+}
+.swal-button--confirm:hover {
+  background-color: rgb(0, 53, 34) !important;
+}
+#animate-proile {
+  animation: fade-in 0.3s ease-in-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-1em) translateX(-2em);
+    transform-origin: top;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+#rating svg:hover,
+#rating svg:hover ~ svg {
+  color: orange; /* رنگ هنگام هاور */
+}
+#adminMenuBack {
+  animation: fading 0.3s;
+}
+@keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.range::-webkit-slider-thumb {
+  background-color: #000000;
+  border: none;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 20px;
+  width: 6px;
+  margin-top: 1px;
+  pointer-events: all;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* For Firefox browsers */
+.range::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+.range,
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.range {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  z-index: 3;
+  background: rgb(0, 0, 0);
+  height: 2px;
+}
+body {
+  margin: auto;
+  max-width: 2000px;
+}
