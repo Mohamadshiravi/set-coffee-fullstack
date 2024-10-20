@@ -92,9 +92,7 @@ export default async function Dashboard() {
           <h2 className="moraba-bold text-center py-2 border-b-2 border-mybrown">
             اخرین سفارش ها
           </h2>
-          <h3 className="text-center moraba-regular py-4 text-xl">
-            سفارشی موجود نیست
-          </h3>
+          <h3 className="text-center moraba-regular mt-6">سفارشی موجود نیست</h3>
         </div>
       </section>
     </div>

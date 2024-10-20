@@ -40,7 +40,7 @@ export default function CartItem({
       </button>
       <div className="lg:w-[300px] w-full flex gap-2 items-center">
         <img
-          src={img}
+          src={img || "/img/product-photo/product-1.png"}
           className="w-[120px] aspect-square object-contain"
           alt={title}
         />

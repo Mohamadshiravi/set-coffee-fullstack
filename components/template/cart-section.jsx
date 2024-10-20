@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Select from "react-select";
 import CartItem from "./cart-item";
 import axios from "axios";
-import { newErrorToast, newToast } from "@/utils/helper-function";
+import { newErrorToast, newToast, ShowSwal } from "@/utils/helper-function";
 import { TbShoppingCartX } from "react-icons/tb";
 import Link from "next/link";
 
@@ -261,7 +261,10 @@ export default function CartSection() {
     }
   }
   async function BuyHandler() {
-    console.log(city);
-    console.log(country.label);
+    ShowSwal(
+      "info",
+      "واقعا الان میخای اینارو بخری و انتظار داری واست ارسال بشه ؟؟؟",
+      "نه بای"
+    );
   }
 }

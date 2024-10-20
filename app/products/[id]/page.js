@@ -104,7 +104,7 @@ export default async function ProductDetails({ params }) {
                 id={JSON.parse(JSON.stringify(product._id))}
                 title={JSON.parse(JSON.stringify(product.title))}
                 price={JSON.parse(JSON.stringify(product.price))}
-                img={JSON.parse(JSON.stringify(product.images[0]))}
+                img={JSON.parse(JSON.stringify(product.images[0] || null))}
               />
             </div>
             <div className="flex flex-col gap-6 shabnam mt-4">

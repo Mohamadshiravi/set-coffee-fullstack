@@ -30,7 +30,9 @@ export default async function WishlistPage() {
                   id={JSON.parse(JSON.stringify(e.product._id))}
                   isWished={JSON.parse(JSON.stringify(true))}
                   wishID={JSON.parse(JSON.stringify(e._id))}
-                  image={JSON.parse(JSON.stringify(e.product.images[0]))}
+                  image={JSON.parse(
+                    JSON.stringify(e.product.images[0] || null)
+                  )}
                 />
               ))}
             </div>
