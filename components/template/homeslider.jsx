@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 export default function HomeSlider() {
   return (
@@ -16,22 +17,20 @@ export default function HomeSlider() {
       >
         <SwiperSlide>
           <img
-            src={"https://set-coffee.com/wp-content/uploads/2023/12/slide.jpg"}
-            alt="slider"
+            src={"/img/bg-photo/photo_2024-10-24_15-45-52.jpg"}
+            alt="slide0"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={
-              "https://set-coffee.com/wp-content/uploads/2021/10/winter-slie.jpg"
-            }
-            alt="slider"
+            src={"/img/bg-photo/photo_2024-10-24_15-46-19.jpg"}
+            alt="slide1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={"https://set-coffee.com/wp-content/uploads/2022/06/fall.jpg"}
-            alt="slider"
+            src={"/img/bg-photo/photo_2024-10-24_15-46-26.jpg"}
+            alt="slide2"
           />
         </SwiperSlide>
       </Swiper>
