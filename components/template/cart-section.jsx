@@ -38,7 +38,7 @@ export default function CartSection() {
   }, []);
   return (
     <>
-      {!loading && userCart.length !== 0 && (
+      {!loading && userCart?.length !== 0 && (
         <>
           <section className="flex relative flex-col bg-white rounded-lg p-3">
             <div className="lg:flex hidden w-full xl:justify-strat justify-center moraba-bold text-zinc-700 text-lg border-b pb-3">
@@ -200,7 +200,7 @@ export default function CartSection() {
           </section>
         </>
       )}
-      {!loading && userCart.length === 0 && (
+      {!loading && userCart?.length === 0 && (
         <div className="flex flex-col items-center justify-center w-full h-[80vh] px-6">
           <TbShoppingCartX className="text-9xl text-zinc-300" />
           <h1 className="moraba-bold sm:text-4xl text-3xl mt-3 text-center">
